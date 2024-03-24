@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/index.loader.js";
+      var loaderUrl = buildUrl + "/kaiteikoun.loader.js";
       var config = {
-        dataUrl: buildUrl + "/index.data.unityweb",
-        frameworkUrl: buildUrl + "/index.framework.js.unityweb",
-        codeUrl: buildUrl + "/index.wasm.unityweb",
+        dataUrl: buildUrl + "/kaiteikoun.data.unityweb",
+        frameworkUrl: buildUrl + "/kaiteikoun.framework.js.unityweb",
+        codeUrl: buildUrl + "/kaiteikoun.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Kaiteikoun",
@@ -99,6 +99,7 @@
         canvas.style.height = "405px";
       }
 
+      canvas.style.background = "url('" + buildUrl + "/kaiteikoun.jpg.unityweb') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
